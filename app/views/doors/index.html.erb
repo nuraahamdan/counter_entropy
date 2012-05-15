@@ -1,0 +1,29 @@
+<h1>Listing doors</h1>
+
+<table>
+  <tr>
+    <th>Idname</th>
+    <th>Ip</th>
+    <th>State</th>
+    <th>Room</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @doors.each do |door| %>
+  <tr>
+    <td><%= door.idname %></td>
+    <td><%= door.ip %></td>
+    <td><%= door.state %></td>
+    <td><%= door.room %></td>
+    <td><%= link_to 'Show', door %></td>
+    <td><%= link_to 'Edit', edit_door_path(door) %></td>
+    <td><%= link_to 'Destroy', door, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Door', new_door_path %>

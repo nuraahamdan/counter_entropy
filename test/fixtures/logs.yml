@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  idname: MyString
+  ip: MyString
+  time: 2012-05-15
+  state: 1.5
+
+two:
+  idname: MyString
+  ip: MyString
+  time: 2012-05-15
+  state: 1.5

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Idname:</b>
+  <%= @log.idname %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @log.ip %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @log.time %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @log.state %>
+</p>
+
+
+<%= link_to 'Edit', edit_log_path(@log) %> |
+<%= link_to 'Back', logs_path %>

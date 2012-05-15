@@ -1,0 +1,29 @@
+<h1>Listing lights</h1>
+
+<table>
+  <tr>
+    <th>Idname</th>
+    <th>Ip</th>
+    <th>State</th>
+    <th>Room</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @lights.each do |light| %>
+  <tr>
+    <td><%= light.idName %></td>
+    <td><%= light.ip %></td>
+    <td><%= light.state %></td>
+    <td><%= light.room %></td>
+    <td><%= link_to 'Show', light %></td>
+    <td><%= link_to 'Edit', edit_light_path(light) %></td>
+    <td><%= link_to 'Destroy', light, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Light', new_light_path %>

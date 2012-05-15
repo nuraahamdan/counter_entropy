@@ -1,0 +1,33 @@
+<%= form_for(@light) do |f| %>
+  <% if @light.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@light.errors.count, "error") %> prohibited this light from being saved:</h2>
+
+      <ul>
+      <% @light.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idName %><br />
+    <%= f.text_field :idName %>
+  </div>
+  <div class="field">
+    <%= f.label :ip %><br />
+    <%= f.text_field :ip %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :room %><br />
+    <%= f.text_field :room %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

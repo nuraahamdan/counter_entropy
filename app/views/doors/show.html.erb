@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Idname:</b>
+  <%= @door.idname %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @door.ip %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @door.state %>
+</p>
+
+<p>
+  <b>Room:</b>
+  <%= @door.room %>
+</p>
+
+
+<%= link_to 'Edit', edit_door_path(@door) %> |
+<%= link_to 'Back', doors_path %>

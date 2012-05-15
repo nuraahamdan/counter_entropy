@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  idName: MyString
+  ip: MyString
+  state: 1.5
+  room: MyString
+
+two:
+  idName: MyString
+  ip: MyString
+  state: 1.5
+  room: MyString
