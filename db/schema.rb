@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120515141507) do
+ActiveRecord::Schema.define(:version => 20120517151801) do
 
   create_table "doors", :force => true do |t|
     t.string   "idname"
@@ -35,6 +35,14 @@ ActiveRecord::Schema.define(:version => 20120515141507) do
     t.string   "ip"
     t.date     "time"
     t.float    "state"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "mappings", :force => true do |t|
+    t.string   "idname"
+    t.string   "ip"
+    t.string   "room"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

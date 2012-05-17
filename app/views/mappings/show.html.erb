@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Idname:</b>
+  <%= @mapping.idname %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @mapping.ip %>
+</p>
+
+<p>
+  <b>Room:</b>
+  <%= @mapping.room %>
+</p>
+
+
+<%= link_to 'Edit', edit_mapping_path(@mapping) %> |
+<%= link_to 'Back', mappings_path %>

@@ -1,4 +1,6 @@
 CounterEntropy::Application.routes.draw do
+  resources :mappings
+
   resources :doors
 
   resources :logs
